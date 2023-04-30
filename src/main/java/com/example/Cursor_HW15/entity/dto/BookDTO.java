@@ -1,6 +1,7 @@
 package com.example.Cursor_HW15.entity.dto;
 
 import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -11,11 +12,11 @@ import lombok.NoArgsConstructor;
 @Data
 public class BookDTO {
 
-    @NotNull
+    @NotEmpty
     private String title;
-    @NotNull
+    @NotEmpty
     private String author;
-    @NotNull
+    @NotEmpty
     private String genre;
     @Min(1)
     private int pages;

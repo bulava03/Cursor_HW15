@@ -1,6 +1,7 @@
 package com.example.Cursor_HW15.entity.dto;
 
 import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
@@ -12,9 +13,9 @@ import lombok.NoArgsConstructor;
 @Data
 public class UserDTO {
 
-    @NotNull
+    @NotEmpty
     private String firstName;
-    @NotNull
+    @NotEmpty
     private String lastName;
     @Email
     private String email;
